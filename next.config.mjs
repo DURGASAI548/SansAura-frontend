@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "vasanth-dsp-marketplace001.s3.ap-south-2.amazonaws.com",
+        hostname: "sansaura-backend.onrender.com",
       },
     ],
   },
