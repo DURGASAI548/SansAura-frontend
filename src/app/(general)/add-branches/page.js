@@ -1,0 +1,20 @@
+import React from 'react'
+import dynamic from 'next/dynamic'
+import PageHeader from '@/components/shared/pageHeader/PageHeader'
+import ProposalEditHeader from '@/components/proposalEditCreate/ProposalEditHeader'
+import AddBranch from '@/components/branch/AddBranch'
+const ProposalSent = dynamic(() => import('@/components/proposalEditCreate/ProposalSent'), { ssr: false })
+const page = () => {
+    return (
+        <>
+            <div className='main-content'>
+                <div className='row'>
+                    <AddBranch />
+                </div>
+            </div>
+            <ProposalSent />
+        </>
+    )
+}
+
+export default page
